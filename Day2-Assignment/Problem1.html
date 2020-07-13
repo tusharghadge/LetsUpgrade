@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script>
+    	let dt = new Date();
+      let day = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    	document.writeln("Today is : " + day[dt.getDay()]);
+      
+      let hrs = dt.getHours();
+      if(hrs < 12){
+      	hrs = hrs + " AM"
+      }else if (hrs == 12){
+      	hrs = hrs + " PM"
+      }else{
+      	hrs = (hrs - 12) + " PM"
+      }
+      document.writeln("Current time is : " + hrs + " : " + dt.getMinutes() + " : " + dt.getSeconds());
+    </script>
+  </head>
+</html>
